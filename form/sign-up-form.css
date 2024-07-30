@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url('./Norse-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, html {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+
+.image-sidebar {
+  flex: 5;
+  background-image: url('form-mage.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.logo-container {
+  margin-top: 45%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: 'Norse-Bold', sans-serif;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.form-content {
+  flex: 7;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header,
+.submit {
+  background-color: #f9f9f9;
+  width: auto;
+  height: auto;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+span {
+  text-decoration: underline;
+}
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); 
+  outline: none; 
+}
+
+input[type="password"]:invalid {
+  border-color: #EF4444;
+}
+
+.btn-submit {
+  background-color: #596D48;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #4a5d3e; 
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #596D48;
+  text-decoration: none;
+}
